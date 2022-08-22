@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:zemoga_test/view/post_detail.dart';
 import 'package:zemoga_test/view_model/posts_view_model.dart';
-import 'package:zemoga_test/widgets/expandable_button.dart';
 import 'package:zemoga_test/widgets/favorites_widget.dart';
 
 import '../domain/models/posts.dart';

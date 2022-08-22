@@ -1,6 +1,20 @@
-# zemoga_test
+# PostsApp_test
 
-A new Flutter project.
+This is a project for an that shows  post from JSON Placeholder, and have a section for keeping favorites.
+
+![](.\images\home.PNG)
+
+
+
+The project is built with clean architecture in mind, 
+
+![](.\images\clean.jpg)
+
+
+
+you can get more information about it in : https://medium.com/bancolombia-tech/deber%C3%ADas-implementar-arquitectura-limpia-en-flutter-a0e1631de5d2
+
+It uses provider for state management, http for API requests  and shared preferences for data persistence. 
 
 ## Getting Started
 

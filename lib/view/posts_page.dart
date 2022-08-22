@@ -5,7 +5,6 @@ import 'package:zemoga_test/view_model/posts_view_model.dart';
 import 'package:zemoga_test/widgets/favorites_widget.dart';
 
 import '../domain/models/posts.dart';
-import '../view_model/favorites_view_model.dart';
 
 class PostsPage extends StatelessWidget {
   const PostsPage({Key? key}) : super(key: key);

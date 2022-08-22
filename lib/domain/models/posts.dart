@@ -1,0 +1,9 @@
+class Posts {
+  final int? userId;
+  final int? id;
+  final String? title;
+  final String? body;
+  bool? favorite = false;
+
+  Posts({this.userId, this.id, this.title, this.body});
+}

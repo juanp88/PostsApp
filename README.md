@@ -2,13 +2,13 @@
 
 This is a project for an that shows  post from JSON Placeholder, and have a section for keeping favorites.
 
-![](.\images\home.PNG)
+![](/images/home.PNG)
 
 
 
 The project is built with clean architecture in mind, 
 
-![](.\images\clean.jpg)
+![](/images/clean.jpg)
 
 
 

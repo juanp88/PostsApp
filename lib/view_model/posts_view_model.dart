@@ -1,9 +1,7 @@
-import 'dart:convert';
-
 import 'package:flutter/Material.dart';
 
 import '../config/use_case_config.dart';
-import '../config/utils/shared_preferences_util.dart';
+
 import '../domain/models/posts.dart';
 
 class PostsViewModel extends ChangeNotifier {

@@ -8,14 +8,16 @@ import 'config/utils/shared_preferences_util.dart';
 import 'view/home.dart';
 
 void main() async {
-  final PostsData = PostsViewModel();
-  PostsData.getPosts;
+  final postsData = PostsViewModel();
+  postsData.getPosts;
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPrefs.init();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MultiProvider(

@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:zemoga_test/view/favorites_page.dart';
 import 'package:zemoga_test/view/posts_page.dart';
-import 'package:zemoga_test/view_model/favorites_view_model.dart';
+
 import 'package:zemoga_test/view_model/home_view_model.dart';
 import 'package:zemoga_test/view_model/posts_view_model.dart';
-
-import '../config/use_case_config.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -16,7 +14,6 @@ class Home extends StatelessWidget {
     final homeProvider = Provider.of<HomeViewModel>(context, listen: true);
     final postsProvider = Provider.of<PostsViewModel>(context, listen: true);
 
-    UseCaseConfig _postConfig = UseCaseConfig();
     final screens = [const PostsPage(), const FavoritesPage()];
 
     return Scaffold(

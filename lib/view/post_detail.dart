@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:zemoga_test/config/style_constants.dart';
 import 'package:zemoga_test/domain/models/comments.dart';
-import 'package:zemoga_test/domain/models/user.dart';
 import 'package:zemoga_test/view_model/posts_view_model.dart';
 import 'package:zemoga_test/widgets/favorites_widget.dart';
-
 import '../config/use_case_config.dart';
-import '../view_model/favorites_view_model.dart';
+
 import '../widgets/user_info_widget.dart';
 
 class PostDetail extends StatelessWidget {
@@ -16,7 +14,8 @@ class PostDetail extends StatelessWidget {
   final int userId;
   final bool isFavorite;
   final int postIndex;
-  PostDetail(
+
+  const PostDetail(
       {Key? key,
       required this.description,
       required this.id,
@@ -25,10 +24,9 @@ class PostDetail extends StatelessWidget {
       required this.postIndex})
       : super(key: key);
 
-  var style = StyleConstants();
-
   @override
   Widget build(BuildContext context) {
+    var style = StyleConstants();
     var screenRatio = MediaQuery.of(context).devicePixelRatio;
     // ignore: unused_local_variable
     final postProvider = Provider.of<PostsViewModel>(context, listen: true);
@@ -130,6 +128,7 @@ class PostDetail extends StatelessWidget {
   }
 
   FutureBuilder<List<Comment>> commentsBuilder(UseCaseConfig _postConfig) {
+    var style = StyleConstants();
     return FutureBuilder(
         future: _postConfig.getCommentsUseCase.getComments(id),
         builder: (context, snapshot) {

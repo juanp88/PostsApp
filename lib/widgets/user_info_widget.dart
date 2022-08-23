@@ -1,12 +1,11 @@
 import 'package:flutter/Material.dart';
-import 'package:flutter/cupertino.dart';
 
 import '../config/style_constants.dart';
 import '../config/use_case_config.dart';
 import '../domain/models/user.dart';
 
 class UserInfoWidget extends StatelessWidget {
-  var style = StyleConstants();
+  final style = StyleConstants();
   UserInfoWidget({
     Key? key,
     required UseCaseConfig postConfig,

@@ -1,30 +1,46 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility that Flutter provides. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
+// // This is a basic Flutter widget test.
+// //
+// // To perform an interaction with a widget in your test, use the WidgetTester
+// // utility that Flutter provides. For example, you can send tap and scroll
+// // gestures. You can also use WidgetTester to find child widgets in the widget
+// // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
 
-import 'package:zemoga_test/main.dart';
+// import 'package:flutter_test/flutter_test.dart';
+// import 'package:mockito/annotations.dart';
+// import 'package:mockito/mockito.dart';
+// import 'package:http/http.dart' as http;
 
-void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+// import 'widget_test.mocks.dart';
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+// @GenerateMocks([http.Client])
+// void main() {
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
-  });
-}
+//    group('fetchAlbum', () {
+//     test('returns an Album if the http call completes successfully', () async {
+//       final client = MockClient();
+
+//       // Use Mockito to return a successful response when it calls the
+//       // provided http.Client.
+//       when(client
+//               .get(Uri.parse('https://jsonplaceholder.typicode.com/albums/1')))
+//           .thenAnswer((_) async =>
+//               http.Response('{"userId": 1, "id": 2, "title": "mock"}', 200));
+
+//       expect(await fetchAlbum(client), isA<Album>());
+//     });
+
+//     test('throws an exception if the http call completes with an error', () {
+//       final client = MockClient();
+
+//       // Use Mockito to return an unsuccessful response when it calls the
+//       // provided http.Client.
+//       when(client
+//               .get(Uri.parse('https://jsonplaceholder.typicode.com/albums/1')))
+//           .thenAnswer((_) async => http.Response('Not Found', 404));
+
+//       expect(fetchAlbum(client), throwsException);
+//     });
+//   });
+// }

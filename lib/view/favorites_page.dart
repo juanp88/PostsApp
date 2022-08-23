@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 
 import '../domain/models/posts.dart';
 import '../view_model/favorites_view_model.dart';
-import '../widgets/favorites_widget.dart';
 
 class FavoritesPage extends StatelessWidget {
   const FavoritesPage({Key? key}) : super(key: key);
@@ -29,6 +28,6 @@ class FavoritesPage extends StatelessWidget {
             ),
             itemCount: favoritesProviderList.length,
           )
-        : Center(child: Text("No data"));
+        : const Center(child: Text("No data"));
   }
 }

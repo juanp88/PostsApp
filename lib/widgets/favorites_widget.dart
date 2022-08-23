@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:zemoga_test/domain/models/posts.dart';
-import 'package:zemoga_test/view_model/favorites_view_model.dart';
 
-import '../view_model/home_view_model.dart';
+import 'package:zemoga_test/view_model/favorites_view_model.dart';
 
 import '../view_model/posts_view_model.dart';
 
 class FavoritesWidget extends StatelessWidget {
-  bool isfavorite;
-  int? index;
-  int? postId;
+  final bool isfavorite;
+  final int? index;
+  final int? postId;
 
-  FavoritesWidget({Key? key, required this.isfavorite, this.index, this.postId})
+  const FavoritesWidget(
+      {Key? key, required this.isfavorite, this.index, this.postId})
       : super(key: key);
 
   @override

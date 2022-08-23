@@ -1,6 +1,5 @@
 import 'dart:async' show Future;
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:zemoga_test/domain/models/posts.dart';
 
 class SharedPrefs {
   static late final SharedPreferences _instance;

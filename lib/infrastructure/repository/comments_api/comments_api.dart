@@ -3,9 +3,10 @@ import 'dart:convert';
 import 'package:zemoga_test/config/api_constants.dart';
 import 'package:zemoga_test/domain/models/comments.dart';
 
-import '../../../domain/models/gateway/comments_gateway.dart';
-import '../../helpers/maps/mappers/comments_mapper.dart';
 import "package:http/http.dart" as http;
+
+import '../../../../domain/models/gateway/comments_gateway.dart';
+import '../../helpers/maps/mappers/comments_mapper.dart';
 
 class CommentsApi extends CommentsGateway {
   final CommentMapper _commentMapper = CommentMapper();

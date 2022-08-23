@@ -4,8 +4,8 @@ import "package:http/http.dart" as http;
 import 'package:zemoga_test/domain/models/user.dart';
 import 'package:zemoga_test/infrastructure/helpers/maps/mappers/user_mapper.dart';
 
-import '../../../config/api_constants.dart';
-import '../../../domain/models/gateway/user_gateway.dart';
+import '../../../../config/api_constants.dart';
+import '../../../../domain/models/gateway/user_gateway.dart';
 
 class UserApi extends UserGateway {
   final UserMapper _commentMapper = UserMapper();

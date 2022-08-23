@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../domain/models/posts.dart';
+import '../../domain/models/posts.dart';
 
 class FavoritesViewModel extends ChangeNotifier {
   final List<Posts> _favoritesList = [];

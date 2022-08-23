@@ -1,8 +1,7 @@
 import 'package:flutter/Material.dart';
+import 'package:zemoga_test/config/use_case_config.dart';
 
-import '../config/use_case_config.dart';
-
-import '../domain/models/posts.dart';
+import '../../domain/models/posts.dart';
 
 class PostsViewModel extends ChangeNotifier {
   final UseCaseConfig _postsConfig = UseCaseConfig();

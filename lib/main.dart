@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:zemoga_test/view_model/favorites_view_model.dart';
-import 'package:zemoga_test/view_model/home_view_model.dart';
 
-import 'package:zemoga_test/view_model/posts_view_model.dart';
+import 'Ui/view/home.dart';
+import 'Ui/view_model/favorites_view_model.dart';
+import 'Ui/view_model/home_view_model.dart';
+import 'Ui/view_model/posts_view_model.dart';
 import 'config/utils/shared_preferences_util.dart';
-import 'view/home.dart';
 
 void main() async {
   final postsData = PostsViewModel();
